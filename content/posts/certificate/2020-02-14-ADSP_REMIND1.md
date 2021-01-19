@@ -1,7 +1,7 @@
 ---
 title : "ADSP 복습 1"
 date: 2020-02-14T16:24:22+09:00
-categories : ["certificate"]
+categories : ["Certificate"]
 ---
 
 # 데이터의 이해

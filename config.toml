@@ -1,9 +1,9 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://example.com/"
-title = "Hugo Theme MemE"
-languageCode = "en"
+baseURL = "https://gyuyoungcho.github.io/"
+title = "GyuYoung's Blog"
+languageCode = "ko-kr"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
@@ -865,7 +865,7 @@ uglyURLs = false
 
     enableImageHost = false
 
-    imageHostURL = "https://example.com/"
+    imageHostURL = "https://gyuyoungcho.github.io/"
 
     # Replace the image link in the HTML
     # head meta also?

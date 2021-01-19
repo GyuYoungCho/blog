@@ -1,6 +1,7 @@
 ---
 title : "ADSP 복습 2"
 date: 2020-02-16T16:24:22+09:00
+categories : ["certificate"]
 ---
 
 # 데이터 분석

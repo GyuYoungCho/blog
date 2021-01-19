@@ -865,7 +865,7 @@ uglyURLs = false
 
     enableImageHost = false
 
-    imageHostURL = "https://gyuyoungcho.github.io/"
+    imageHostURL = "https://example.com/"
 
     # Replace the image link in the HTML
     # head meta also?

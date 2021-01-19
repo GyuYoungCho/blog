@@ -1,10 +1,6 @@
 ---
 title : "ADSP 복습 2"
-category :
-    - ADSP
-tag :
-    - ADSP
-toc : true
+date: 2020-02-16T16:24:22+09:00
 ---
 
 # 데이터 분석

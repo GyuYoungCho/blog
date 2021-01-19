@@ -1,10 +1,6 @@
 ---
 title : "ADSP 복습 1"
-category :
-    - ADSP
-tag :
-    - ADSP
-toc : true
+date: 2020-02-14T16:24:22+09:00
 ---
 
 # 데이터의 이해

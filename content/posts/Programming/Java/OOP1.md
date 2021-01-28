@@ -2,7 +2,7 @@
 title: "OOP1"
 date: 2021-01-22T23:12:07+09:00
 draft: false
-categories : ["Algorithm", "Java"]
+categories : ["Programming", "Java"]
 ---
 
 # OOP

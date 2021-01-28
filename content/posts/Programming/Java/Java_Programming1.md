@@ -2,7 +2,7 @@
 title: "Java_Programming1"
 date: 2021-01-19T16:12:07+09:00
 draft: false
-categories : ["Algorithm", "Java"]
+categories : ["Programming", "Java"]
 ---
 
 # Java Basic

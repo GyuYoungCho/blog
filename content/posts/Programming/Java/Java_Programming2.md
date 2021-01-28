@@ -2,7 +2,7 @@
 title: "Java_Programming2"
 date: 2021-01-21T19:12:07+09:00
 draft: false
-categories : ["Algorithm", "Java"]
+categories : ["Programming", "Java"]
 ---
 
 # 배열

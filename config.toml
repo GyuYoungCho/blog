@@ -94,9 +94,9 @@ uglyURLs = false
 # Author’s information
 [author]
     # Name
-    name = "reuixiy"
+    name = "GyuYoung"
     # Email
-    email = "reuixiy@gmail.com"
+    email = "rbud613@gmail.com"
     # Motto or introduction
     motto = "Viva La Vida"
     # Avatar
@@ -104,7 +104,7 @@ uglyURLs = false
     # Personal website, default: baseURL
     website = "https://io-oi.me/"
     # Twitter
-    twitter = "reuixiy"
+    twitter = ""
 
 # Related content
 [related]
@@ -345,11 +345,11 @@ uglyURLs = false
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "2020-01-20T20:17:43+00:00"
     # ATTENTION: keep this format, change
     #            the number
 
-    siteTwitter = "reuixiy"
+    siteTwitter = "gyuyoungcho"
     # Note: used for Twitter Cards
 
 
@@ -635,7 +635,7 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    enableComments = false
+    enableComments = true
     # Note: *global settings*
     #       `comments` in post’s Front Matter
     #       has a higher priority than here
@@ -681,7 +681,7 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    enableGoogleAnalytics = false
+    enableGoogleAnalytics = true
 
     trackingCodeType = "gtag"
     # Note: gtag or analytics
@@ -1082,9 +1082,9 @@ uglyURLs = false
     ######################################
     # Post Gitinfo
 
-    enablePostGitInfo = false
+    enablePostGitInfo = true
 
-    displayPostGitInfo = false
+    displayPostGitInfo = true
     # Note: *global settings*
     #       `gitinfo` in post’s Front Matter
     #       has a higher priority than here
@@ -1122,11 +1122,11 @@ uglyURLs = false
     shareOnTwitter = true
     shareOnFacebook = true
     shareOnLinkedIn = true
-    shareOnTelegram = true
-    shareOnWeibo = true
-    shareOnDouban = true
-    shareOnQQ = true
-    shareOnQzone = true
+    shareOnTelegram = false
+    shareOnWeibo = false
+    shareOnDouban = false
+    shareOnQQ = false
+    shareOnQzone = false
 
     shareViaQRCode = true
 

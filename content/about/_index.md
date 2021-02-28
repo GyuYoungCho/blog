@@ -14,6 +14,8 @@ date: 2021-01-18T16:24:38+09:00
     - 온도 추정 대회
 - 빅데이터 청년 인재 고려대학교 과정(지능 정보 시스템) 수료 (2020.07 ~ 2020.09)
 - AI Innovation 고급 과정 시각반(2020.09 ~ 2020.10)
+- SSAFY 5기(2021.01~)
+
 
 ## Study
 - 기계학습 스터디(2019.03~2019.06)
@@ -48,6 +50,7 @@ date: 2021-01-18T16:24:38+09:00
 - Python
 - R
 - C, C++
+- JAVA
 - SQL
 - HTML/CSS/JS
 - Flask
@@ -74,4 +77,4 @@ date: 2021-01-18T16:24:38+09:00
 - [잠재 고객 상품 추천](https://github.com/GyuYoungCho/Project/tree/master/L_point%20Competition/L_point_final)
 - [오디오 분류](https://github.com/GyuYoungCho/Deep_learning/tree/master/audio) 
 - [식생활을 위한 음식 추천](https://github.com/GyuYoungCho/project_public)
-- CCTV를 이용한 날씨 분류(https://github.com/GyuYoungCho/Capstone)
+- [CCTV를 이용한 날씨 분류](https://github.com/GyuYoungCho/Capstone)

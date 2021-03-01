@@ -410,7 +410,7 @@ uglyURLs = false
     # Set to a non-negative number to limit
     # the number of posts displayed per
     # category/section.
-    limitPostsLimit = -1
+    limitPostsLimit = 2
 
 
     ######################################

@@ -16,7 +16,7 @@ newContentEditor = ""
 
 # i18n
 defaultContentLanguage = "ko"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 # Pluralize titles in lists?
 pluralizeListTitles = false
@@ -641,7 +641,7 @@ uglyURLs = false
     #       has a higher priority than here
 
     ## Disqus
-    enableDisqus = true
+    enableDisqus = false
     disqusShortname = ""
 
     ## Valine
@@ -666,8 +666,8 @@ uglyURLs = false
     # Note: https://valine.js.org/
 
     ## Utterances
-    enableUtterances = false
-    utterancesRepo = ""
+    enableUtterances = true
+    utterancesRepo = "GyuYoungCho/GyuYoungCho.github.io"
     utterancesIssueTerm = "pathname"
     utterancesTheme = "github-light"
     utterancesThemeDark = "photon-dark"
@@ -686,7 +686,7 @@ uglyURLs = false
     trackingCodeType = "gtag"
     # Note: gtag or analytics
 
-    trackingID = ""
+    trackingID = "G-HZW9WNNPRD"
 
 
     ######################################
@@ -1069,7 +1069,7 @@ uglyURLs = false
 
     enablePostUpdatedBadge = true
 
-    displayUpdatedBadge = false
+    displayUpdatedBadge = true
     # Note: *global settings*
     #       `badge` in post’s Front Matter
     #       has a higher priority than here
@@ -1093,9 +1093,9 @@ uglyURLs = false
     repoEditURL = ""
 
     gitIcon = "code-branch"
-    displayCommitHash = true
+    displayCommitHash = false
 
-    displayCommitMessage = true
+    displayCommitMessage = false
     msgIcon = "info"
 
     displayFeedback = true
@@ -1243,14 +1243,14 @@ uglyURLs = false
     #       https://busuanzi.ibruce.info/
 
     # Socials
-    enableSocials = true
+    enableSocials = false
     # Note: see data/Socials.toml
 
 
     ######################################
     # Multilingual
 
-    enableLangToggle = false
+    enableLangToggle = true
 
     hideLangToggleInHome = false
 

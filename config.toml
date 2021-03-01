@@ -15,7 +15,7 @@ theme = "meme"
 newContentEditor = ""
 
 # i18n
-defaultContentLanguage = "en"
+defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir = false
 
 # Pluralize titles in lists?
@@ -25,13 +25,13 @@ pluralizeListTitles = false
 summaryLength = 42
 
 # Enable Emoji emoticons support?
-enableEmoji = false
+enableEmoji = true
 
 # Text to display for footnote return links
 footnoteReturnLinkContents = "↩"
 
 # Enable `.GitInfo` object for each page?
-enableGitInfo = false
+enableGitInfo = true
 
 # Enable generation of `robots.txt` file?
 enableRobotsTXT = true
@@ -328,7 +328,7 @@ uglyURLs = false
     homeVideoMp4 = ""
     homeLogo = ""
     homeLogoLink = ""
-    homeTitle = ""
+    homeTitle = "hi"
     homeMotto = ""
     homeDescription = ""
     homeKeywords = ""
@@ -609,7 +609,7 @@ uglyURLs = false
     ######################################
     # MathJax (chemical equation supported)
 
-    enableMathJax = false
+    enableMathJax = true
     # Note: *global settings*
     #       `mathjax` in post’s Front Matter
     #       has a higher priority than here
@@ -641,7 +641,7 @@ uglyURLs = false
     #       has a higher priority than here
 
     ## Disqus
-    enableDisqus = false
+    enableDisqus = true
     disqusShortname = ""
 
     ## Valine
@@ -732,7 +732,7 @@ uglyURLs = false
     #       Unit: em
 
     # Is the post original?
-    original = true
+    original = false
     # Note: will affect the author and
     #       copyright information of the
     #       post
@@ -1069,7 +1069,7 @@ uglyURLs = false
 
     enablePostUpdatedBadge = true
 
-    displayUpdatedBadge = true
+    displayUpdatedBadge = false
     # Note: *global settings*
     #       `badge` in post’s Front Matter
     #       has a higher priority than here

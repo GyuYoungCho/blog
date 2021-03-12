@@ -39,7 +39,7 @@ enableRobotsTXT = true
 # Number of items per page in paginated
 # lists (valid for the `posts` homepage
 # layout in MemE)
-paginate = 5
+paginate = 7
 
 # URL related
 disablePathToLower = false
@@ -1177,7 +1177,7 @@ uglyURLs = false
     ######################################
     # Minimal Footer
 
-    enableMinimalFooter = false
+    enableMinimalFooter = true
     enableVerticalBarStructure = false
     # Note: If you enable this, the
     #       categories or sections that
@@ -1186,7 +1186,7 @@ uglyURLs = false
     #       categories or sections and are
     #       separated by vertical bar(|).
 
-    enableAboutPageMinimalFooter = false
+    enableAboutPageMinimalFooter = true
 
 
     ######################################
@@ -1345,3 +1345,10 @@ uglyURLs = false
     fofVideoMp4 = ""
     # Note: you can leave these two
     #       options empty("")
+
+    # sitemap 생성
+    [sitemap]
+    # always, hourly daily, weekly, monthly, yearly, never
+    changefreq = "monthly"
+    filename = "sitemap.xml"
+    priority = 0.5

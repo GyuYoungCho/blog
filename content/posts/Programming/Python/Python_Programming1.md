@@ -1,5 +1,5 @@
 ---
-title: "Java_Programming1"
+title: "Python_Programming1"
 date: 2021-03-15T16:12:07+09:00
 draft: false
 categories : ["Programming", "Python"]

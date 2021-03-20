@@ -44,8 +44,53 @@ result.plot();
 - stationary하게 만드는 과정 -> d parameter
 - trend, seasonality가 없어지는 과정 -> 보통 1,2차에서 끝나고 그래도 성능이 좋아지지 않으면 다른 요인의 문제
 
+```python
+# stationary 확인
+from statsmodels.tsa.stattools import adfuller
 
-##
+def adf_check(ts):
+    result = adfuller(ts)
+    if result[1] <= 0.05:
+        print('Stationary {}'.format(result[1]))
+    else:
+        print('Non-Stationary {}'.format(result[1]))
+
+# 보통 0.05이하가 되어야 
+adf_check(timeseries) 
+
+# 1차 차분
+diff1 = timeseries - timeseries.shift(1)
+adf_check(diff1.dropna())
+```
+
+#### 로그 변환
+- 표준편차가 자료의 크기에 비례하여 증가할 경우
+
+### 정상과정 확률 모형
+가우시안 백색잡음의 현재값과 과거값들의 선형조합으로 이루어져 있다고 가정
+
+#### Autoregression(AR)
+- p parameter 관련
+- 데이터와 이전 시점 사이의 관계에 대한 회귀 모델
+
+#### Moving Average(MA)
+- q parameter
+- 이전 시점의 moveing average의 residual에 대한 회귀 모델 -> noise 예측
+
+#### ARMA (Auto-Regressive Moving Average)
+- AR모형과 MA모형의 특징을 모두 가지는 모형
+
+### ARIMA(p,d,q)
+- 
+
+
+4 5
+c.xc
+....
+xx..
+...x
+x..x
+
 
 참고  : 작년 코로나 데이터 분석한 것을 복습 + 추가 개념 정리
 [Corona data anaylsis](https://github.com/GyuYoungCho/ADP_STUDY/blob/master/study/time_series.ipynb)

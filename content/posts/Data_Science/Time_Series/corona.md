@@ -53,9 +53,6 @@ corona.info()
 corona.head()
 ```
 
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -157,9 +154,6 @@ corona.head()
 corona.index.unique()
 ```
 
-
-
-
     DatetimeIndex(['2020-01-22', '2020-01-23', '2020-01-24', '2020-01-25',
                    '2020-01-26', '2020-01-27', '2020-01-28', '2020-01-29',
                    '2020-01-30', '2020-01-31',
@@ -177,9 +171,6 @@ last_day = corona.loc[corona.index == '2020-09-13']
 last_day_country = last_day.groupby('Country/Region')[['Confirmed','Deaths','Recovered']].sum()
 last_day_country
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -279,7 +270,6 @@ last_day_country
     </tr>
   </tbody>
 </table>
-<p>190 rows × 3 columns</p>
 </div>
 
 
@@ -290,8 +280,6 @@ Confirmed_list = last_day_country.sort_values(by='Confirmed',ascending=False)[:5
 Deaths_list = last_day_country.sort_values(by='Deaths',ascending=False)[:5].index
 last_day_country.sort_values(by='Confirmed',ascending=False)
 ```
-
-
 
 
 <div>
@@ -392,18 +380,11 @@ last_day_country.sort_values(by='Confirmed',ascending=False)
     </tr>
   </tbody>
 </table>
-<p>190 rows × 3 columns</p>
 </div>
-
-
-
 
 ```python
 Confirmed_list
 ```
-
-
-
 
     Index(['US', 'India', 'Brazil', 'Russia', 'Peru'], dtype='object', name='Country/Region')
 
@@ -415,12 +396,10 @@ Top_Confrimed = corona.loc[corona['Country/Region'].isin(Confirmed_list)]
 Top_Deaths = corona.loc[corona['Country/Region'].isin(Deaths_list)]
 ```
 
-
 ```python
 five_top_Confirmed = Top_Confrimed.groupby(['Country/Region','ObservationDate'])['Confirmed'].sum()
 five_top_Deaths = Top_Deaths.groupby(['Country/Region','ObservationDate'])['Deaths'].sum()
 ```
-
 
 ```python
 five_top_Confirmed.unstack('Country/Region').plot()
@@ -428,18 +407,8 @@ five_top_Deaths.unstack('Country/Region').plot()
 ```
 
 
-
-
-    <AxesSubplot:xlabel='ObservationDate'>
-
-
-
-
 ![image](https://user-images.githubusercontent.com/49333349/111909407-8377d080-8aa0-11eb-8155-19f2fc0c98cb.png)
-
 ![image](https://user-images.githubusercontent.com/49333349/111909426-94284680-8aa0-11eb-815b-53c53aec1b2b.png)
-
-
 
 
 ```python
@@ -453,9 +422,6 @@ one_day_Deaths = f_d - f_d.shift(1)
 ```python
 one_day_Confirmed 
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -581,10 +547,7 @@ one_day_Confirmed
     </tr>
   </tbody>
 </table>
-<p>236 rows × 5 columns</p>
 </div>
-
-
 
 
 ```python
@@ -593,19 +556,10 @@ one_day_Deaths.fillna(0).plot()
 plt.ylim(-100,5000)
 ```
 
-
-
-
     (-100.0, 5000.0)
 
-
-
-
 ![image](https://user-images.githubusercontent.com/49333349/111909437-a2766280-8aa0-11eb-9896-4c0dd25c3e50.png)
-
-
 ![image](https://user-images.githubusercontent.com/49333349/111909446-adc98e00-8aa0-11eb-8e2b-6d097d73fa14.png)
-
 
 # <span style="color:blue">2-1-2</span>
 
@@ -618,9 +572,6 @@ one_month = corona['2020-08-14':]
 a = one_month.groupby(['ObservationDate','Country/Region'])[['Confirmed','Deaths','Recovered']].sum()
 a
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -725,7 +676,7 @@ a
     </tr>
   </tbody>
 </table>
-<p>5890 rows × 3 columns</p>
+
 </div>
 
 
@@ -849,10 +800,8 @@ a.reset_index(level=0)
     </tr>
   </tbody>
 </table>
-<p>5890 rows × 4 columns</p>
+
 </div>
-
-
 
 
 ```python
@@ -860,9 +809,6 @@ b = last_day.groupby('Country/Region')['SNo'].count()
 b.name = 'State_Num'
 b.sort_values(ascending=False)[:10]
 ```
-
-
-
 
     Country/Region
     Russia            83
@@ -884,17 +830,13 @@ b.sort_values(ascending=False)[:10]
 df = a.reset_index(level=0).join(b, how='left')
 ```
 
-
 ```python
 df.set_index('ObservationDate',append=True,inplace=True)
 ```
 
-
 ```python
 df
 ```
-
-
 
 
 <div>
@@ -1013,19 +955,13 @@ df
     </tr>
   </tbody>
 </table>
-<p>5890 rows × 4 columns</p>
 </div>
-
-
 
 
 ```python
 df['risk_pi'] = (df['Confirmed'] - df['Deaths'] - df['Recovered'])/(df['State_Num']*10000)
 df.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1215,7 +1151,7 @@ adfuller(train)
 
 
 
-1차 차분
+`1차 차분
 
 
 ```python
@@ -1605,26 +1541,13 @@ y_hat['ES'].plot(label='ES')
 plt.legend()
 ```
 
-
-
-
-    <matplotlib.legend.Legend at 0x22130294f60>
-
-
-
-
-![png](output_49_1.png)
-
-
+![image](https://user-images.githubusercontent.com/49333349/111909897-70660000-8aa2-11eb-950c-77cb76d0d556.png)
 
 ```python
 model = ExponentialSmoothing(np.asarray(train+1),trend='mul')
 model_result = model.fit()
 model_result.summary()
 ```
-
-
-
 
 <table class="simpletable">
 <caption>ExponentialSmoothing Model Results</caption>
@@ -1671,16 +1594,11 @@ model_result.summary()
 </tr>
 </table>
 
-
-
-
 ```python
 y_hat = pd.DataFrame(test.copy())
 y_hat['ES'] = model_result.forecast(len(test))
 mean_squared_error(y_hat['Confirmed'],y_hat['ES'])
 ```
-
-
 
 
     995.7063961726025
@@ -1696,22 +1614,10 @@ plt.legend()
 ```
 
 
-
-
     <matplotlib.legend.Legend at 0x2212c6de470>
 
 
+![image](https://user-images.githubusercontent.com/49333349/111909917-8378d000-8aa2-11eb-8d4e-e0ed491ff5d3.png)
 
 
-![png](output_52_1.png)
 
-
-비선형되는 방법....?
-
-- https://otexts.com/fppkr/arima-ets.html
-- https://teamdable.github.io/techblog/Time-Series-Analysis-hw
-
-
-```python
-
-```

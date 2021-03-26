@@ -1,7 +1,7 @@
 ---
 title: "회귀 분석을 이용한 앨범 판매량 분석 및 예측"
 date: 2021-03-25T00:11:41+09:00
-draft: true
+draft: false
 categories : ["Data_Science", "Machine_Learning"]
 ---
 

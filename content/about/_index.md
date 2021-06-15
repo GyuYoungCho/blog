@@ -54,7 +54,9 @@ date: 2021-01-18T16:24:38+09:00
 - JAVA
 - SQL
 - HTML/CSS/JS
+- Vue.js
 - Flask
+- Spring
 - Git
 - Data analysis
 - Machine Learning

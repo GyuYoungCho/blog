@@ -50,7 +50,6 @@ date: 2021-01-18T16:24:38+09:00
 ## Stack(언어/기술)
 - Python
 - R
-- C, C++
 - JAVA
 - SQL
 - HTML/CSS/JS
@@ -81,3 +80,4 @@ date: 2021-01-18T16:24:38+09:00
 - [오디오 분류](https://github.com/GyuYoungCho/Deep_learning/tree/master/audio) 
 - [식생활을 위한 음식 추천](https://github.com/GyuYoungCho/project_public)
 - [CCTV를 이용한 날씨 분류](https://github.com/GyuYoungCho/Capstone)
+- [부동산 정보 제공- HappyHouse]()
